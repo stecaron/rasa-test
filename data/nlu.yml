@@ -81,7 +81,7 @@ nlu:
     - I would like to reserve a table
     - Can I make a reservation?
 
-- intent: recommand_meal
+- intent: recommend_meal
   examples: |
     - What do you recommend to order in your menu?
     - What is your prefered meal?
