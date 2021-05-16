@@ -15,7 +15,7 @@ rules:
 - rule: Reply good bye
   steps:
   - intent: goodbye
-  - action: utter_respond_goodbyes
+  - action: utter_respond_goodbye
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
