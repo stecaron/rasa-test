@@ -2,29 +2,26 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: want recommendation + no order
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - action: utter_how_can_i_that_help
+  - intent: menu_question
+  - intent: recommend_meal
+  - action: action_recommend_meal
+  - intent: thanks
+  - intent: goodbye
 
-- story: sad path 1
+- story: place single order + no recommend
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_how_can_i_that_help
+  - intent: place_order
+  - action: utter_what_would_like_order 
+  - intent: place_order
+  - action: action_order_meal
+  - action: utter_something_else
   - intent: deny
-  - action: utter_goodbye
+  - intent: goodbye

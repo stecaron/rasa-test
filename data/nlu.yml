@@ -31,6 +31,14 @@ nlu:
     - bye bye
     - see you later
 
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - thanks to you ! 
+    - tks
+    - thank you very much
+
 - intent: affirm
   examples: |
     - yes
@@ -50,39 +58,35 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: menu_question
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - I have a question about the menu
+    - i would like to have some informations
+    - I need your advices
+    - I am hesitating, can you give me more infos about some meals?
+    - Can you help me wiht the menu please?
+    - I would like to order something, but first, I have few questions
 
-- intent: mood_unhappy
+- intent: place_order
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - I would like to order something
+    - Can I place an order here?
+    - I would like to order a [burger](meal) please
+    - I'll take the [irish stew](meal)
+    - I wil get you the [poutine](meal) as meal please
+
+- intent: book_table
+  examples: |
+    - Can I book at table?
+    - I would like to reserve a table
+    - Can I make a reservation?
+
+- intent: recommand_meal
+  examples: |
+    - What do you recommend to order in your menu?
+    - What is your prefered meal?
+    - What would you advice me to take?
+    - I don't know what to take, what do you recommand?
 
 - intent: bot_challenge
   examples: |

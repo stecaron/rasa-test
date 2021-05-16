@@ -5,29 +5,73 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
+  - menu_question
+  - place_order
+  - book_table
+  - recommend_meal
   - bot_challenge
+  - thanks
 
-responses:
+entities:
+- meal
+
+slots:
+  meal:
+    type: text
+
+actions:
+- utter_greet
+- utter_how_can_i_that_help
+- utter_goodbye
+- utter_imabot
+- utter_ask_menu_question_details
+- utter_respond_thanks
+- utter_respond_goodbye
+- utter_what_would_you_like_order
+- utter_something_else
+- action_recommend_meal
+- action_order_meal
+
+templates:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  - text: "Hey!"
+  - text: "Hello my friend!"
+  
+  utter_how_can_i_that_help:
+  - text: "How can I help you?"
+    buttons:
+    - title: "I have a question about the menu"
+    - payload: "/menu_question"
+    - title: "I would like to place an order"
+    - payload: "/place_order"
+    - title: "I would like to book a table"
+    - payload: "/book_table"
 
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_menu_question_details:
+  - text: "How can I help you with the menu?"
+  - text: "Sure I can help you with the menu. What would you like to know?"
+
+  utter_respond_thanks:
+  - text: "You're welcome!"
+  - text: "Np my friend"
+
+  utter_respond_goodbye:
+  - text: "Bye!"
+  - text: "Goodbye!"
+
+  utter_what_would_you_like_order:
+  - text: "What can I get you?"
+  - text: "What would you like to order?"
+
+  utter_something_else:
+  - text: "Would you like something else?"
+  - text: "That's it? Or you want someting else?"
 
 session_config:
   session_expiration_time: 60
