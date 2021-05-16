@@ -2,20 +2,20 @@ version: "2.0"
 
 rules:
 
-- rule: Menu question
-  steps:
-  - intent: menu_question
-  - action: utter_ask_menu_question_details
+# - rule: Menu question
+#   steps:
+#   - intent: menu_question
+#   - action: utter_ask_menu_question_details
 
-- rule: Reply to thanks
-  steps:
-  - intent: thanks
-  - action: utter_respond_thanks
+# - rule: Reply to thanks
+#   steps:
+#   - intent: thanks
+#   - action: utter_respond_thanks
 
-- rule: Reply good bye
-  steps:
-  - intent: goodbye
-  - action: utter_respond_goodbye
+# - rule: Reply good bye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_respond_goodbye
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
