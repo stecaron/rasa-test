@@ -32,7 +32,7 @@ actions:
 - action_recommend_meal
 - action_order_meal
 
-templates:
+responses:
   utter_greet:
   - text: "Hey!"
   - text: "Hello my friend!"
@@ -41,11 +41,11 @@ templates:
   - text: "How can I help you?"
     buttons:
     - title: "I have a question about the menu"
-    - payload: "/menu_question"
+      payload: "/menu_question"
     - title: "I would like to place an order"
-    - payload: "/place_order"
+      payload: "/place_order"
     - title: "I would like to book a table"
-    - payload: "/book_table"
+      payload: "/book_table"
 
   utter_goodbye:
   - text: "Bye"
