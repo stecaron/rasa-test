@@ -19,7 +19,7 @@ stories:
   - action: utter_greet
   - action: utter_how_can_i_that_help
   - intent: place_order
-  - action: utter_what_would_like_order 
+  - action: utter_what_would_you_like_order 
   - intent: place_order
   - action: action_order_meal
   - action: utter_something_else
