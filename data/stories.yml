@@ -8,6 +8,7 @@ stories:
   - action: utter_greet
   - action: utter_how_can_i_that_help
   - intent: menu_question
+  - action: utter_ask_menu_question_details
   - intent: recommend_meal
   - action: action_recommend_meal
   - intent: thanks
