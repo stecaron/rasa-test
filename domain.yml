@@ -41,7 +41,7 @@ responses:
   - text: "How can I help you?"
     buttons:
     - title: "I have a question about the menu"
-      payload: "/menu_question"
+      payload: "I have a question about the menu"
     - title: "I would like to place an order"
       payload: "/place_order"
     - title: "I would like to book a table"
